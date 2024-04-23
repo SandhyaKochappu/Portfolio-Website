@@ -1,14 +1,18 @@
 import "./NavbarStyles.css";
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 
-import { FaBars } from "react-icons";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+
   return (
     //Portfolio link pointing to home page
-    <div classname="header">
+    <div className="header">
     <Link to="/">
     <h1>Portfolio</h1>
     </Link>
@@ -27,7 +31,7 @@ const Navbar = () => {
         </li>
     </ul>
     <div className="hamburger">
-        <FaBars />
+        <FaBars size={20} style={{ color: "#fff"}}/>
     </div>
     </div>
   );

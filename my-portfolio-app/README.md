@@ -34,6 +34,8 @@ react-router-dom:6.22.3,
 react-scripts:5.0.1,
 web-vitals:^2.1.4
 
+The webpage was made mobile compatible using @media screen and (max-width: 1040px) command and a hamburger menu was applied, which is not available on a web screen.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
