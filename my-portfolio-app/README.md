@@ -36,6 +36,8 @@ web-vitals:^2.1.4
 
 The webpage was made mobile compatible using @media screen and (max-width: 1040px) command and a hamburger menu was applied, which is not available on a web screen.
 
+Button clicks were handled using using 'useState'.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
