@@ -10,7 +10,7 @@ const Navbar = () => {
     <Link to="/">
     <h1>Portfolio</h1>
     </Link>
-    <ul classname="nav-menu">
+    <ul className="nav-menu">
         <li>
             <Link to="/">Home</Link>
         </li>
@@ -28,4 +28,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
