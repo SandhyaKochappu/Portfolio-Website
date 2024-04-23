@@ -10,6 +10,20 @@ const Navbar = () => {
     <Link to="/">
     <h1>Portfolio</h1>
     </Link>
+    <ul>
+        <li>
+            <Link to="/">Home</Link>
+        </li>
+        <li>
+            <Link to="/About">About</Link>
+        </li>
+        <li>
+            <Link to="/Resume">Resume</Link>
+        </li>
+        <li>
+            <Link to="/Portfolio">Portfolio</Link>
+        </li>
+    </ul>
     </div>
   );
 };
