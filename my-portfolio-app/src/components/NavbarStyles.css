@@ -1,9 +1,10 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding: lrem;
 }
+
 .nav-menu {
     display: flex;
 }
@@ -14,4 +15,27 @@
 .nav-menu li a {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1040px) {
+.nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+}
+
+.nav-menu li {
+    padding: 1rem 0;
+}
+
+.nav-menu li a {
+    font-size: 2rem;
 }

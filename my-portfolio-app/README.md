@@ -14,6 +14,26 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+.gitignore file was created to handle secrets
+MIT open license was used for code licensing purposes.
+
+react app was created using 'npm create-react-app'
+Additional pages were created using react routes.
+React components were used for navigation into different pages and style setting.
+react-router-dom and react-icons were installed using 'npm install commands' in the command prompt.
+
+Button font families were imported from 'Google fonts'.
+The following dependencies were used to build this project
+@testing-library/jest-dom: 5.17.0,
+@testing-library/react: 13.4.0,
+@testing-library/user-event: 13.5.0,
+react: 18.2.0,
+react-dom:18.2.0,
+react-icons:5.1.0,
+react-router-dom:6.22.3,
+react-scripts:5.0.1,
+web-vitals:^2.1.4
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

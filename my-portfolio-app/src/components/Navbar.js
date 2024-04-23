@@ -1,7 +1,9 @@
 import "./NavbarStyles.css";
-import React from 'react';
 
+import React from 'react';
 import { Link } from "react-router-dom";
+
+import { FaBars } from "react-icons";
 
 const Navbar = () => {
   return (
@@ -24,6 +26,9 @@ const Navbar = () => {
             <Link to="/Portfolio">Portfolio</Link>
         </li>
     </ul>
+    <div className="hamburger">
+        <FaBars />
+    </div>
     </div>
   );
 };
