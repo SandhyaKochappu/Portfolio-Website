@@ -1,9 +1,10 @@
+//if nav-menu is avtive, display hamburger nav menu, else normal nav-menu
 import "./NavbarStyles.css";
 
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -16,7 +17,8 @@ const Navbar = () => {
     <Link to="/">
     <h1>Portfolio</h1>
     </Link>
-    <ul className="nav-menu">
+    
+    <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
             <Link to="/">Home</Link>
         </li>
@@ -30,8 +32,12 @@ const Navbar = () => {
             <Link to="/Portfolio">Portfolio</Link>
         </li>
     </ul>
-    <div className="hamburger">
+    <div className="hamburger" onClick={handleClick}>
+    {click ? (
+        <FaTimes size={20} style={{ color: "#fff"}}/>
+    ) : (
         <FaBars size={20} style={{ color: "#fff"}}/>
+    )}
     </div>
     </div>
   );
