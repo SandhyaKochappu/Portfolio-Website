@@ -11,11 +11,14 @@ const Heroimage = () => {
     <img className="into-img" src={IntroImg} alt="IntroImg"/>      
     </div>
     <div className="content">
-        <p> Hi,I'm a Data Analyst.</p>
-        <h1> </h1>
+        <p> Hi, I am Sandhya Kochappu </p>
+        <h1> I'm a Data Analyst </h1>
         <div>
-            <Link>
-
+            <Link to="/Resume"
+            className="btn">Resume_btn
+            </Link>
+            <Link to="/Contact"
+            className="btn btn-light">Contact_btn
             </Link>
         </div>
     </div>

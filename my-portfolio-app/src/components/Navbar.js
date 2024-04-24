@@ -1,6 +1,6 @@
 //if nav-menu is avtive, display hamburger nav menu, else normal nav-menu
 import "./NavbarStyles.css";
-
+//adding event listener for scrolling and changing color
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,17 @@ const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+
+    const [color, setColor] = useState(false);
+    const changeColor = () =>{
+        if(window.scrollY >=100){
+            setColor(true);
+        }else{
+            setColor(false);
+        }
+        };
+    window.addEventListener("scroll", changeColor);
+
 
   return (
     //Portfolio link pointing to home page
