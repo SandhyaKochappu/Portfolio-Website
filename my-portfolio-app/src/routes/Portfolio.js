@@ -9,7 +9,7 @@ const Portfolio = () => {
     <div>                    
         <Navbar/>
         <Footer />
-        <Heroimageothers heading="PROJECTS." text="Some of my most recent projects"/>
+        <Heroimageothers heading="Projects." text="Have a look at some of my recent works."/>
     </div>
   )
 }
