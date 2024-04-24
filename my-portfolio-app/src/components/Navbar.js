@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     //Portfolio link pointing to home page
-    <div className="header">
+    <div className={color ? "header header-bg" : "header"}>
     <Link to="/">
     <h1>Portfolio</h1>
     </Link>
