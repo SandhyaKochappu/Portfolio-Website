@@ -2,6 +2,7 @@ import react from 'react';
 //importimg Navbar, heroimage components in Home page for display
 import Navbar from '../components/Navbar';
 import Heroimage from '../components/Heroimage';
+import Footer from '../components/Footer';
 
 const Home = () => {
     return(
@@ -9,6 +10,7 @@ const Home = () => {
         <div>                    
         <Navbar/>
         <Heroimage />
+        <Footer />
         </div>
     )
 }
