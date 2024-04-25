@@ -8,7 +8,7 @@
     height: 90px;
     z-index: 10;
 }
-/*setting background ransition for nav buttons*/
+/*setting background transition for nav buttons*/
 .header-bg {
     background-color: rgba(0, 0, 0, 0.85);
     transition:0.5s;
@@ -17,12 +17,12 @@
 .nav-menu {
     display: flex;
 }
-
+/*padding from top to bottom:0, left to right:1 for list*/
 .nav-menu li {
-    padding: 0 1rem ;
+    padding: 0 1rem;
 }
 .nav-menu li a {
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
