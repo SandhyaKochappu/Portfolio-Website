@@ -20,7 +20,7 @@ MIT open license was used for code licensing purposes.
 react app was created using 'npm create-react-app'
 Additional pages were created using react routes.
 React components were used for navigation into different pages and style setting.
-react-router-dom and react-icons were installed using 'npm install commands' in the command prompt.
+react-router-dom, bootstrap and react-icons were installed using 'npm install commands' in the command prompt.
 
 Button font families were imported from 'Google fonts'.
 The following dependencies were used to build this project
