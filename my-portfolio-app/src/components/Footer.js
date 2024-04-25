@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="footer-container">
             <div className="left">
                 <div className="location">
-                    <FaHome size={20} style={{color: "#fff", marginright: "2rem"}} />
-                <div>
+                  <h4>< FaHome size={20} style={{color: "#fff", marginright: "2rem"}} />
                     <p>52 Brooks close</p>
                     <p>MangoHill</p>
+                  </h4>
                 </div>
-                </div>
+              
                 <div className="phone">
                     <h4>< FaPhone size={20} style={{ color: "#fff", marginRight: "2rem"}} />
                     042-1367-010</h4>
@@ -43,6 +43,7 @@ const Footer = () => {
 
         </div>
     </div>
+    
   )
 }
 
