@@ -3,7 +3,15 @@ import "./Card.css";
 import Edu from "../assets/Edu.jpg";
 import React2 from "../assets/react2.jpg";
 
-const Card = () => {
+const Card = (
+  imgSrc,
+  imgAlt,  
+  title,
+  description,
+  buttonText,
+  link,
+
+) => {
   return (
     <div className='card-container'>
       <img
