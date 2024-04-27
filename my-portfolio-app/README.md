@@ -20,7 +20,7 @@ MIT open license was used for code licensing purposes.
 react app was created using 'npm create-react-app'
 Additional pages were created using react routes.
 React components were used for navigation into different pages and style setting.
-react-router-dom, bootstrap,ag-grid-react,ag-grid-community and react-icons were installed using 'npm install commands' in the command prompt.
+react-router-dom, bootstrap,ag-grid-react,ag-grid-community,axios and react-icons were installed using 'npm install commands' in the command prompt.
 
 Button font families were imported from 'Google fonts'.
 The following dependencies were used to build this project
@@ -36,7 +36,7 @@ web-vitals:^2.1.4
 
 The webpage was made mobile compatible using @media screen and (max-width: 1040px) command and a hamburger menu was applied, which is not available on a web screen.
 
-Button clicks were handled using using 'useState'.
+Button clicks were handled using 'useState'.
 
 ### `npm test`
 
