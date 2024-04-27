@@ -3,12 +3,12 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Heroimageothers from "../components/Heroimageothers";
-import Card from "../components/Card";
+import  Card  from "../components/Card";
 import Edu from "../assets/Edu.jpg";
 import {AgGridReact} from 'ag-grid-react';
 import '../../node_modules/ag-grid-community/styles/ag-grid.css';
 import '../../node_modules/ag-grid-community/styles/ag-theme-alpine.css';
-import { useState } from 'react';
+
 
 const Resume = () => {
 
@@ -36,6 +36,7 @@ const Resume = () => {
           buttonText="Learn more"
           link="cardPage"
         />
+
         <div className='ag-theme-alpine' style={{height: 200, width:730}}>
         <AgGridReact
                   rowData={rowData}

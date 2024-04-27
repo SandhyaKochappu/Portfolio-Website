@@ -1,30 +1,26 @@
 import React from 'react';
 import "./Card.css";
-import Edu from "../assets/Edu.jpg";
-import React2 from "../assets/react2.jpg";
 
 const Card = (
-  imgSrc,
+    imgSrc,
   imgAlt,  
-  title,
-  description,
+  title,   
   buttonText,
-  link,
-
+  link,  
 ) => {
   return (
     <div className='card-container'>
-      <img
-        src={Edu}
-        alt="Card Image"
+      {imgSrc && imgAlt && (
+        <img src={imgSrc}
+        alt={imgAlt}
         className='card-img'
-        />
-        <h1 className='card-title'>Education</h1>
-        <a href="cardPage" className='card-btn'>
-          Learn more
+        /> )}
+        {title && <h1 className='card-title'>{title}</h1>}
+        <a href={link} className='card-btn'>
+          {buttonText}
         </a>
-    </div>
-  )
-}
+        </div>
+  );
+};
 
 export default Card;
