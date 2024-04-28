@@ -4,9 +4,7 @@ import Profile from './Profile';
 /*Using react hooks: useState, useEffect, and asynchronous programming
  to fetch data from GITHUB API;
  If there are no repos, display the loading component
- ...repos: spread operator to get the rest of the properties in the repos list*/ 
-
-
+ ...repos: spread operator to get the rest of the properties in the repos list */ 
 
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState("SandhyaKochappu");
@@ -33,14 +31,11 @@ return (
         {!repos ? <Loading /> :
             (
                 <>
-                <section className='pt-20 pb-20'>
-                    <h1 className="text-2xl font-bold">
-                        Viewing {users}'s repositories
-                    </h1>   
-                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                        {repos.map((repos) => {
+                <section className='pt-20 pb-20'>                      
+                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-10">
+                        {repos.map((repos) => (
                             <Profile key={repos.id} {...repos}/>
-                        })}
+            ))}
                         
                     </div> 
                 </section>
