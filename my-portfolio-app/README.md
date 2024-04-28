@@ -22,6 +22,16 @@ Additional pages were created using react routes.
 React components were used for navigation into different pages and style setting.
 react-router-dom, bootstrap,ag-grid-react,ag-grid-community,axios and react-icons were installed using 'npm install commands' in the command prompt.
 
+To install and use tailwind components follow the below steps:
+Install tailwindcss via npm, and then run the init command to generate your tailwind.config.js file.
+
+1. npm install -D tailwindcss
+2. npx tailwindcss init
+3. Configure your template paths
+   Add the paths to all of your template files in your tailwind.config.js file.
+4. Add the Tailwind directives to your index.CSS file.
+5. Start using Tailwind’s utility classes to style your content.
+
 Button font families were imported from 'Google fonts'.
 The following dependencies were used to build this project
 @testing-library/jest-dom: 5.17.0,
