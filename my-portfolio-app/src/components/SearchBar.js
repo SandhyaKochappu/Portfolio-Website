@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
 import Profile from './Profile';
+
+
 /*Using react hooks: useState, useEffect, and asynchronous programming
  to fetch data from GITHUB API;
  If there are no repos, display the loading component
@@ -10,17 +12,19 @@ const SearchBar = () => {
     const [searchInput, setSearchInput] = useState("SandhyaKochappu");
     const [repos, setRepos ] = useState([]);
     const [users] = useState("SandhyaKochappu");
+    const apiToken = process.env.REACT_APP_API_TOKEN;    
 
     const handleChange = (e) => {
         setSearchInput(e.target.value)
     };       
        
+  
 
     useEffect(() => {
        const fetchRepos = async () => {
             const res = await fetch(`https://api.github.com/users/${users}/repos`);
             const data = await res.json()
-            console.log(data);
+            console.log({apiToken});
             setRepos(data);
        }
        fetchRepos()            
@@ -28,7 +32,7 @@ const SearchBar = () => {
 
 return (
     <>
-        {!repos ? <Loading /> :
+            {!repos ? <Loading /> :
             (
                 <>
                 <section className='pt-20 pb-20'>                      
@@ -43,6 +47,7 @@ return (
             ) 
         };
        </> 
+       
 );
 
 }

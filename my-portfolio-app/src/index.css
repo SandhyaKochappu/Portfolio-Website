@@ -1,3 +1,6 @@
+/* max-width: sets max-width of the whole screen from left to right
+margin: margin from left and right, auto:center
+padding: from left and right between containers,features etc*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,8 +11,8 @@
 *{
   font-family: "Outfit", sans-serif;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  
+  
   
 }
 body {

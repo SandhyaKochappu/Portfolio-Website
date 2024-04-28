@@ -33,6 +33,7 @@ Install tailwindcss via npm, and then run the init command to generate your tail
 5. Start using Tailwind’s utility classes to style your content.
 
 npm install date-fns --save
+npm install dotenv --save
 
 Button font families were imported from 'Google fonts'.
 The following dependencies were used to build this project
