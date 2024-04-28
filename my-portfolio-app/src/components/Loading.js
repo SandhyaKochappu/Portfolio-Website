@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Loading = () => {
+export default function Loading() {
   return (
     <div className='font-bold text-3xl'>Loading.....</div>
   )
 }
 
-export default Loading
