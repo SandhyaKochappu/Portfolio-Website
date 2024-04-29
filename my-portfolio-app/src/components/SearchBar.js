@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
 import Profile from './Profile';
-//import dotenv from  '../../node_modules/dotenv';
+import "./SearchBarStyles.css";
 
 
 /*Using react hooks: useState, useEffect, and asynchronous programming
@@ -45,7 +45,8 @@ return (
         <input type="text" placeholder='search'
             value={searchInput} onChange={handleChange}
         />
-        <button onClick={handleClick}>Search</button>
+        <button  className=".btn"
+         onClick={handleClick}>Search</button>
         </div>
 
         {!repos ? <Loading /> :
