@@ -2,18 +2,16 @@ import "./ContactFormStyles.css";
 import { useForm, ValidationError } from '@formspree/react';
 /*The useForm hook returns a state object and a handleSubmit function which you pass to the onSubmit form attribute. Combined,
  these provide a way to submit the form data via AJAX and update
- form state depending on the response received.*/
+ form state depending on the response received.
+ 
+ 
+ */
 
 const ContactForm = () => {
 
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
 
-  if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
-  }
-
-    
-
+  
   return (
     <div className="form-container">
     <form method="POST" onSubmit={handleSubmit}>
@@ -34,8 +32,15 @@ const ContactForm = () => {
             </div>
             <button type="submit" disabled={state.submitting}>Send</button>
             <ValidationError errors={state.errors} />
+            {state.succeeded ? 
+              <p >Thanks for your submission!</p>
+              
+              :""}       
+            
         </form>
+        
         </div>
+        
     
   )
 }

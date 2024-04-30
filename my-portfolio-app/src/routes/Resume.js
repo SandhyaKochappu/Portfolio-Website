@@ -29,7 +29,7 @@ const Resume = () => {
   return (
     <div>                    
         <Navbar/>
-        <Heroimageothers heading="Resume" text="Here's my latest resume."/>
+        <Heroimageothers  />
         <Card imgSrc={Edu}
           imgAlt="Card Image"
           title="Education"

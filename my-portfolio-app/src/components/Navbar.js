@@ -23,9 +23,9 @@ const Navbar = () => {
 
 
   return (
-    //Portfolio link pointing to home page
+    //Portfolio link pointing to Portfolio page
     <div className={color ? "header header-bg" : "header"}>
-    <Link to="/">
+    <Link to="/Portfolio">
     <h1>Portfolio</h1>
     </Link>
     
@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link to="/Resume">Resume</Link>
         </li>
         <li>
-            <Link to="/Portfolio">Portfolio</Link>
+            <Link to="/Contact">Contact</Link>
         </li>
     </ul>
     <div className="hamburger" onClick={handleClick}>
