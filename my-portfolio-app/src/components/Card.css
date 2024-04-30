@@ -6,7 +6,8 @@
     flex-direction: column;
     margin: 0.5rem;
     background-color: white;
-    height: fit-content;
+    height: 50vh;
+   
 }
 
 .card-img {
@@ -16,16 +17,23 @@
 
 .card-title {
     margin: 0.5rem 5%;
+    color: black;
+    font-size: 25px; 
+    justify-content: center;
+        align-items: center;
+        text-align: center;
 }
 
 .card-btn {
     text-align: center;
-    width: 90%;
+    width: 10%;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: #2563eb;
     color: white;
     text-decoration: none;
-    margin: 0.5rem;
+    margin: 1rem 4rem;
+    justify-content: center;
+    align-items: center;
 
 }
