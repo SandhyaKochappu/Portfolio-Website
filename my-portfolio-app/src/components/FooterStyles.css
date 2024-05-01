@@ -1,15 +1,17 @@
+/*   margin-bottom: 0.8rem 1rem;*/
+
 .footer {
     width: 100%;
-    padding: 6rem 0;
+    padding: 10rem 0;
     background-color: rgba(19, 19, 19, 0.8);
 }
 
 .footer-container {
     max-width: 1140px;
-    margin: auto;
+    margin:1rem 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 70px;
 }
 
 .left{
@@ -27,6 +29,7 @@
 
 .location p {
     line-height: 30px;
+    
 }
 
 .right {
@@ -40,6 +43,8 @@
 /*style setting for social media links*/
 .social{
     margin-top: 1rem;
+    
+    
 }
 
 h4 {
@@ -49,6 +54,7 @@ h4 {
 
 p{
     font-size: 1.2rem;
+    
 }
 
 /*set up for mobile screen */

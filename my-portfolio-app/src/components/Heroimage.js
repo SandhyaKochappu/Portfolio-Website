@@ -10,15 +10,14 @@ const Heroimage = () => {
     <div className="mask">  
     <img className="into-img" src={IntroImg} alt="IntroImg"/>      
     </div>
-    <div className="content">
-        <p> Hi, I am Sandhya Kochappu </p>
-        <h1> I'm a Data Analyst </h1>
-        <div>
+    <div className="content">    
+    <h1> Hi, I am Sandhya, a Data Analyst. </h1>    
+                <div>
             <Link to="/Resume"
-            className="btn">Resume_btn
+            className="btn">Resume
             </Link>
             <Link to="/Contact"
-            className="btn btn-light">Contact_btn
+            className="btn btn-light">Contact
             </Link>
         </div>
     </div>

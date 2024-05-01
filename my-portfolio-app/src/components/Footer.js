@@ -6,7 +6,7 @@ import {
     FaPhone, 
     FaMailBulk, 
     FaFacebook, 
-    FaTwitter, 
+    FaInstagram, 
     FaLinkedin 
 } from "react-icons/fa";
 
@@ -33,11 +33,18 @@ const Footer = () => {
             </div>
             <div className="right">
                 <h4>About me</h4>
-                <p>I love analysing data and software development.</p>
+                <h4>I love analysing data and software development.</h4>
                 <div className="social">
-                < FaFacebook size={30} style={{ color: "#fff", marginRight: "1rem"}} />
-                < FaTwitter size={30} style={{ color: "#fff", marginRight: "1rem"}} />
-                < FaLinkedin size={30} style={{ color: "#fff", marginRight: "1rem"}} />  
+                <a href="https://www.facebook.com/sandhyakochappu" target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={30} style={{ color: "#fff", marginRight: "1rem"}}/>
+                </a>
+                <a href="https://www.linkedin.com/in/sandhya-kochappu-a811bb121/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={30} style={{ color: "#fff", marginRight: "1rem"}}/>
+                </a>
+                <a href="https://www.instagram.com/sandhyakochappu" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram size={30} style={{ color: "#fff", marginRight: "1rem"}}/>
+                </a>
+                
                 </div>
             </div>
 
