@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Heroimageothers from "../components/Heroimageothers";
 import  Card  from "../components/Card";
-import Skills from "../components/Skills";
+
 
 const Resume = () => { 
 
@@ -13,9 +13,7 @@ const Resume = () => {
     <div>                    
         <Navbar/>
         <Heroimageothers  />
-        <Card />
-        <Skills />
-               
+        <Card />               
         <Footer />
     </div>
   )
