@@ -10,8 +10,7 @@ import Profile from './Profile';
  ...repos: spread operator to get the rest of the properties in the repos list */ 
 
 const SearchBar = () => {
-    const [searchInput, setSearchInput] = useState("");
-    const [buttonClicked, setButtonClicked] = useState(false);    
+   
     const [repos, setRepos ] = useState([]);
     const [users] = useState("SandhyaKochappu");
     const apiToken = process.env.REACT_APP_API_TOKEN;    
@@ -33,37 +32,15 @@ const SearchBar = () => {
        fetchRepos()            
   }, []);
 
-  const handleChange = (e) => {
-        setSearchInput(e.target.value)
-    };       
+ 
     
-    const handleClick = () => {
-        // Update state to indicate button click
-        setButtonClicked(true);
-                
-    };
 
-    useEffect(() => {
-    if (buttonClicked) {
-      const repository = repos.find((repo) => repo.name === searchInput);  
-        <Profile key={repository.id} {...repository}/>
-        if (!repository) {
-            return <div>Repository not found.</div>;
-        }
-    } 
-  }, [buttonClicked]); // Dependency array includes buttonClicked state
-
+    
 
 return (
     <> 
-    <div style={{padding: "20px"}}>
-        <input type="text" placeholder='search'
-            value={searchInput} onChange={handleChange}
-        />
-        <button  style={{ color:'white', size:'sm',
-         backgroundColor: '#228B22'}}
-         onClick={handleClick}>Search</button>
-        </div>
+    
+        
 
         {!repos ? <Loading /> :
             (
